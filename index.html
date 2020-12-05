@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 1. Вариант 1</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <main>
+        <div class="list-head">
+            <div class="list__text">Task:</div>
+            <div class="list__date">Due date</div>
+            <div class="list__left">Daye left</div>
+        </div>
+        <div id="list" class="list">
+            
+        </div>
+        <div class="list-control">
+            <input id="task-text" class="list-control__text" type="text" placeholder="to do..">
+            <input id="task-date" class="list-control__date" type="date" placeholder="Date" min="2020-01-01" max="2100-12-31">
+            <button id="task-btn" class="list-control__btn">add task</button>
+        </div>
+    </main>
+
+    <div id="popup-error" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__title">Ошибка</div>
+                <div id="error" class="popup__text"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
